@@ -1,0 +1,426 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0427.1803                               -->
+<workbook original-version='18.1' source-build='2020.1.3 (20201.20.0427.1803)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000' inline='true' name='federated.1cokdy50b8tsok188e1it0iz1mdg' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000' name='textscan.0xoy0wz1heg7321cuuppw0bac52w'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/vinayak/Desktop/vinayak/tableau/section 9/P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv' dataRefreshTime='' directory='C:/Users/vinayak/Desktop/vinayak/tableau/section 9' filename='C:/Users/vinayak/AppData/Local/Temp/TableauTemp/14pwwyg1jaf3c211vf6ou0nkax2i/P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0xoy0wz1heg7321cuuppw0bac52w' name='P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv' table='[P1-quarterly-census-of-em#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:I10001:no:A1:I10001:1' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Area Type' ordinal='0' />
+            <column datatype='string' name='Area' ordinal='1' />
+            <column datatype='integer' name='NAICS' ordinal='2' />
+            <column datatype='string' name='NAICS Title' ordinal='3' />
+            <column datatype='integer' name='Year' ordinal='4' />
+            <column datatype='integer' name='Establishments' ordinal='5' />
+            <column datatype='integer' name='Average Employment' ordinal='6' />
+            <column datatype='integer' name='Total Wage' ordinal='7' />
+            <column datatype='integer' name='Annual Average Salary' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Area Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Area Type]</local-name>
+            <parent-name>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv]</parent-name>
+            <remote-alias>Area Type</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Area</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Area]</local-name>
+            <parent-name>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv]</parent-name>
+            <remote-alias>Area</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAICS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NAICS]</local-name>
+            <parent-name>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv]</parent-name>
+            <remote-alias>NAICS</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAICS Title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[NAICS Title]</local-name>
+            <parent-name>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv]</parent-name>
+            <remote-alias>NAICS Title</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Establishments</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Establishments]</local-name>
+            <parent-name>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv]</parent-name>
+            <remote-alias>Establishments</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Employment</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Average Employment]</local-name>
+            <parent-name>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv]</parent-name>
+            <remote-alias>Average Employment</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Wage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Wage]</local-name>
+            <parent-name>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv]</parent-name>
+            <remote-alias>Total Wage</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual Average Salary</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Annual Average Salary]</local-name>
+            <parent-name>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv]</parent-name>
+            <remote-alias>Annual Average Salary</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I10001:no:A1:I10001:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>59994</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='level' datatype='integer' name='[Calculation_673006688927723520]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='LEN(&apos;Naics&apos;)' />
+      </column>
+      <column caption='industry' datatype='string' name='[NAICS Title]' role='dimension' type='nominal' />
+      <column caption='Naics' datatype='integer' name='[NAICS]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.464286' measure-ordering='alphabetic' measure-percentage='0.535714' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Area Type' />
+        <field-sort-custom-order field='Area' />
+        <field-sort-custom-order field='NAICS' />
+        <field-sort-custom-order field='Calculation_673006688927723520' />
+        <field-sort-custom-order field='NAICS Title' />
+        <field-sort-custom-order field='Year' />
+        <field-sort-custom-order field='Establishments' />
+        <field-sort-custom-order field='Average Employment' />
+        <field-sort-custom-order field='Total Wage' />
+        <field-sort-custom-order field='Annual Average Salary' />
+      </field-sort-info>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{95AB4067-21F2-4178-B25E-A6CDA63ED471}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000' name='federated.1cokdy50b8tsok188e1it0iz1mdg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cokdy50b8tsok188e1it0iz1mdg'>
+            <column datatype='integer' name='[Annual Average Salary]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Annual Average Salary]' derivation='Avg' name='[avg:Annual Average Salary:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='line-interpolation' value='step' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1cokdy50b8tsok188e1it0iz1mdg].[avg:Annual Average Salary:qk]</rows>
+        <cols>[federated.1cokdy50b8tsok188e1it0iz1mdg].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{86DA7637-9357-476C-A70C-6729795DAC95}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{23252133-2DC6-4F15-9A69-FE26B3A3E724}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1cokdy50b8tsok188e1it0iz1mdg].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{776492D4-FB06-4140-A086-C7DA5A6ED172}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
